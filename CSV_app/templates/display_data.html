@@ -39,11 +39,24 @@
         tr:hover {
             background-color: #e1e1e1;
         }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 <body>
     <h2>User Data</h2>
-    <a href="{% url 'download_csv' %}">Download in CSV</a>
+    <a href="{% url 'download_csv' %}" class="download-button">Download in CSV</a>
     <table>
         <thead>
             <tr>
