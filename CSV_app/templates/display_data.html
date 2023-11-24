@@ -1,0 +1,82 @@
+<!-- templates/display_users.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Users</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e1e1e1;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Data</h2>
+    <a href="{% url 'download_csv' %}">Download in CSV</a>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Address 1</th>
+                <th>Address 2</th>
+                <th>Pincode</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users_with_details %}
+                <tr>
+                    <td>{{ user.first_name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.customerdetails.phone_no }}</td>
+                    <td>{{ user.customerdetails.gender }}</td>
+                    <td>{{ user.customerdetails.dob }}</td>
+                    <td>{{ user.customerdetails.address1 }}</td>
+                    <td>{{ user.customerdetails.address2 }}</td>
+                    <td>{{ user.customerdetails.pincode }}</td>
+                    <td>{{ user.customerdetails.state }}</td>
+                    <td>{{ user.customerdetails.country }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
