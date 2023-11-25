@@ -1,0 +1,21 @@
+first name,last name,email,phone no,gender,dob,address 1,address 2,pincode,state,country
+Aarav,Sharma,aarav.sharma@example.com,555-1234,Male,5/15/1990,123 Main St,Apt 4B,54321,Maharashtra,India
+Isha,Singh,isha.singh@example.com,555-5678,Female,8/22/1985,456 Oak Ave,Suite 7,67890,Delhi,India
+Aaradhya,Patel,aaradhya.patel@example.com,555-9876,Female,11/10/1988,789 Pine Rd,Unit 12,12345,Gujarat,India
+Arjun,Verma,arjun.verma@example.com,555-4321,Male,3/25/1992,234 Cedar Lane,Apt 3C,34567,Uttar Pradesh,India
+Ananya,Gupta,ananya.gupta@example.com,555-8765,Female,7/18/1982,567 Birch Street,Floor 2,98765,Madhya Pradesh,India
+Aryan,Rajput,aryan.rajput@example.com,555-2345,Male,2/12/1995,678 Elm Blvd,Suite 5A,23456,West Bengal,India
+Avni,Kumar,avni.kumar@example.com,555-6789,Female,9/30/1989,789 Maple Avenue,Unit 9,56789,Karnataka,India
+Aditya,Singh,aditya.singh@example.com,555-5432,Male,12/5/1980,890 Pineapple Lane,Apartment 8,34567,Maharashtra,India
+Ishika,Mishra,ishika.mishra@example.com,555-8765,Female,4/28/1993,901 Oak Street,Suite 10,45678,Delhi,India
+Aaryan,Shah,aaryan.shah@example.com,555-3210,Male,6/15/1987,123 Cedar Avenue,Unit 6B,78901,Gujarat,India
+Aarav,Sharma,aarav.sharma@example.com,555-1234,Male,5/15/1990,456 Pine St,Apt 3A,54321,Maharashtra,India
+Isha,Singh,isha.singh@example.com,555-5678,Female,8/22/1985,789 Oak Ave,Suite 10,67890,Delhi,India
+Aaradhya,Patel,aaradhya.patel@example.com,555-9876,Female,11/10/1988,567 Pine Rd,Unit 8,12345,Gujarat,India
+Arjun,Verma,arjun.verma@example.com,555-4321,Male,3/25/1992,234 Cedar Lane,Apt 3C,34567,Uttar Pradesh,India
+Ananya,Gupta,ananya.gupta@example.com,555-8765,Female,7/18/1982,567 Birch Street,Floor 2,98765,Madhya Pradesh,India
+Aryan,Rajput,aryan.rajput@example.com,555-2345,Male,2/12/1995,678 Elm Blvd,Suite 5A,23456,West Bengal,India
+Avni,Kumar,avni.kumar@example.com,555-6789,Female,9/30/1989,789 Maple Avenue,Unit 9,56789,Karnataka,India
+Aditya,Singh,aditya.singh@example.com,555-5432,Male,12/5/1980,890 Pineapple Lane,Apartment 8,34567,Maharashtra,India
+Ishika,Mishra,ishika.mishra@example.com,555-8765,Female,4/28/1993,901 Oak Street,Suite 10,45678,Delhi,India
+Aaryan,Shah,aaryan.shah@example.com,555-3210,Male,6/15/1987,123 Cedar Avenue,Unit 6B,78901,Gujarat,India
