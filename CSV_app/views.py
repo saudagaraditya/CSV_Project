@@ -1,4 +1,3 @@
-# views.py
 import csv
 from datetime import datetime
 from django.shortcuts import render, redirect,HttpResponse
@@ -65,24 +64,24 @@ def display_users(request):
     return render(request, 'display_data.html', {'users_with_details': users_with_details})
 
 
-# Add this view function for downloading CSV
+#This is view function for downloading CSV
 def download_csv(request):
     users_with_details = User.objects.select_related('customerdetails').all()
 
-    # Create the HttpResponse object with CSV header.
+    #HttpResponse object with CSV header.
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="user_data.csv"'
 
-    # Create the CSV writer using the HttpResponse as the "file".
+    #The CSV writer using the HttpResponse as the "file".
     csv_writer = csv.writer(response)
 
-    # Write the header row.
+    #The header row.
     csv_writer.writerow([
         'First Name', 'Last Name', 'Email', 'Phone No', 'Gender', 'DOB',
         'Address 1', 'Address 2', 'Pincode', 'State', 'Country'
     ])
 
-    # Write the data rows.
+    #The data rows.
     for user in users_with_details:
         csv_writer.writerow([
             user.first_name,
