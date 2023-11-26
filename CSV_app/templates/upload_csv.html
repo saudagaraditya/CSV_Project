@@ -82,7 +82,7 @@
     <form method="post" enctype="multipart/form-data">
         <h2>Upload CSV File</h2>
         {% csrf_token %}
-        <input type="file" name="file" id="id_file" >
+        <input type="file" name="file" id="id_file" accept=".csv">
         <button type="submit">Upload</button>
     </form>
 </body>
